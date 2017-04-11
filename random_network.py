@@ -14,7 +14,7 @@ import random as r
 def generate_random(N,p):
 	for i in range(N):
 		for j in range(N):
-			if(i!=j):
+			if(i!=j and i < j):
 				if(r.random()>p):
 					f.write("%s %s\n" %(i,j))
 
